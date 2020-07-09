@@ -1,0 +1,86 @@
+body {   
+      border: 2px solid palegreen;
+}
+
+header {   
+      border: 2px solid palegreen;
+}
+
+div {   
+      border: 2px solid palegreen;
+}
+
+main {   
+      border: 2px solid palegreen;
+}
+
+article {   
+      border: 2px solid palegreen;
+}
+
+section {   
+      border: 2px solid palegreen;
+}
+
+aside {   
+      border: 2px solid palegreen;
+}
+
+main {   
+      border: 2px solid palegreen;
+}
+
+img {   
+      border: 2px solid palegreen;
+}
+
+.fish-list {
+      display: flex;
+      flex-flow: row wrap;
+      width: inherit;
+}
+
+.headline--fish-list {
+      text-align: center;
+      float: none;
+}
+
+.fish-cards {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      width: inherit;
+}
+
+.fish-card__text--info-type {
+      float: left;
+      color: powderblue;
+      background-color: royalblue;
+}
+
+.fish-card__text--info {
+      float: right;
+}
+
+.content--left {
+      display: flex;
+      flex-flow: row wrap;
+      flex-basis: 35%;
+      float: left;
+      width: 50%;
+}
+
+.content--right {
+      float: right;
+      width: 50%;
+}
+
+.header {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.header__logo-image {
+      float: left;
+}
+
