@@ -1,0 +1,57 @@
+.draw {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background: paleturquoise;
+}
+
+.draw-1 {
+    z-index: 15;
+    opacity: .5;
+}
+
+.draw-3 {
+    z-index: 5;
+}
+
+.waves {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waves1 {
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+    animation: animate 6s infinite;
+}
+
+.waves2 {
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 100px;
+    animation: animate 12s infinite;
+}
+
+.waves3 {
+    -webkit-background-size: 60% 100;
+    background-size: 50% 80px;
+    animation: animate 8s infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+        }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(.55);
+        }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+        }
+}
