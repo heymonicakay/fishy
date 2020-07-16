@@ -6,7 +6,7 @@
  * 3) Export the newly created fish list so it can be used by other components
  */ 
 
-import {getBunchOfFish} from "./showMeThoseFish"
+import {getBunchOfFish} from "./showMeThoseFish.js"
 import {makeFish} from "./makeFish.js"
             // The function "makeFish" passes in "thisFish" to generate the HTML representation of a "fish--card"
 
