@@ -1,11 +1,9 @@
-
-// Other components need to be able to access the (fish)Data, but they don't like it raw 
-
-// This component collects each of the (fish)Objects....
+/**This component is responsible for storing, managing, and exporting the raw data collection for Martin's Fish
+ * This component sorts the data into individual fishObjects (thisFish) with their respective Properties, 
+ * and puts them all into an Array (bunchOfFish)
+ */
 
 const bunchOfFish = [
-
-    // .... assigns the unique (fish)Properties to each one respectively...
 
     {
         name: "Puffy",
@@ -33,17 +31,18 @@ const bunchOfFish = [
     },
 ]
 
-// ... and would ya look at that! We've got a lovely little (fish)Array!
+/** Other components need to be able to access the fish data stored and organized by this component
+ * so this component must EXPORT the above information, in order to make it accessible by the other components*/ 
 
-// This component is responsible for making the (fish)Data accessible to the other components
-// In order to do that, the (fish)Data must be exported
 
-export const getAFish = () => {
+export const getBunchOfFish = () => {
     //.slice -makes a copy!
     return bunchOfFish.slice()
     // because we don't want other components to mess with the stored data.
 }
 
-export const giveAFish = (fish) => {
-    bunchOfFish.push(fish)
+/** Now we have a copy of the Array, "bunchOfFish", which has been EXPORTED*/
+
+export const giveAFish = (thisFish) => {
+    bunchOfFish.push(thisFish)
 }
