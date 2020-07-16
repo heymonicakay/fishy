@@ -40,9 +40,3 @@ export const getBunchOfFish = () => {
     return bunchOfFish.slice()
     // because we don't want other components to mess with the stored data.
 }
-
-/** Now we have a copy of the Array, "bunchOfFish", which has been EXPORTED*/
-
-export const giveAFish = (thisFish) => {
-    bunchOfFish.push(thisFish)
-}
